@@ -51,7 +51,6 @@ function drop(e) {
   ** таким образом получается сложить таску внутрь другой таски
   */
   const parent = e.target.closest('[data-parent]')
-  console.log(e);
   parent.classList.remove('hovered')
   parent.append(currentTask)
 }
